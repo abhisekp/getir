@@ -10,9 +10,9 @@
     "inspect": "nodemon --inspect src/app.ts",
     "test": "jest",
     "lint": "npm run lint:js ",
-    "lint:eslint": "eslint --ignore-path .gitignore --ext .ts",
-    "lint:js": "npm run lint:eslint src/",
-    "lint:fix": "npm run lint:js -- --fix"
+    "lint:eslint": "prettier-eslint --ignore-path .gitignore",
+    "lint:js": "npm run lint:eslint \"src/**/*.ts\"",
+    "lint:fix": "npm run lint:js -- -- --write"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "author": "Abhisek Pattnaik",
   "license": "MIT",
   "dependencies": {
+    "@meanie/mongoose-to-json": "^2.6.0",
     "@useoptic/express-middleware": "^0.0.5",
     "agenda": "^3.1.0",
     "agendash": "^2.1.1",
@@ -66,6 +67,7 @@
     "jest": "^26.4.2",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
+    "prettier-eslint-cli": "^5.0.1",
     "ts-jest": "^26.4.0",
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.11.0",

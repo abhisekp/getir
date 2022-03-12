@@ -1,4 +1,4 @@
-import { Service, Inject } from 'typedi';
+import { Inject, Service } from 'typedi';
 import jwt from 'jsonwebtoken';
 import MailerService from './mailer';
 import config from '@/config';
@@ -15,8 +15,7 @@ export default class AuthService {
     private mailer: MailerService,
     @Inject('logger') private logger,
     @EventDispatcher() private eventDispatcher: EventDispatcherInterface,
-  ) {
-  }
+  ) {}
 
   public async SignUp(userInputDTO: IUserInputDTO): Promise<{ user: IUser; token: string }> {
     try {
@@ -122,7 +121,7 @@ export default class AuthService {
         name: user.name,
         exp: exp.getTime() / 1000,
       },
-      config.jwtSecret
+      config.jwtSecret,
     );
   }
 }

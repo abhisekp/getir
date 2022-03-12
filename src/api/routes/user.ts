@@ -1,5 +1,6 @@
-import { Router, Request, Response } from 'express';
+import { Request, Response, Router } from 'express';
 import middlewares from '../middlewares';
+
 const route = Router();
 
 export default (app: Router) => {
