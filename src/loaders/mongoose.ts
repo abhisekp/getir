@@ -6,10 +6,6 @@ import toJson from '@meanie/mongoose-to-json';
 mongoose.plugin(toJson);
 
 export default async (): Promise<Db> => {
-  const connection = await mongoose.connect(config.databaseURL, {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-  });
+  const connection = await mongoose.connect(config.databaseURL);
   return connection.connection.db;
 };
