@@ -1,7 +1,7 @@
 {
-  "name": "bulletproof-nodejs",
-  "version": "1.0.0",
-  "description": "Bulletproof node.js",
+  "name": "getir",
+  "version": "0.0.1",
+  "description": "Getir Project",
   "main": "src/app.ts",
   "scripts": {
     "build": "tsc",
@@ -19,17 +19,10 @@
     "url": "git+https://github.com/santiq/bulletproof-nodejs.git"
   },
   "keywords": [
-    "boilerplay",
-    "cron",
-    "jobs",
-    "js",
-    "javascript",
-    "typescript",
-    "node",
-    "express"
+    "getir"
   ],
-  "author": "Santiago Quinteros",
-  "license": "ISC",
+  "author": "Abhisek Pattnaik",
+  "license": "MIT",
   "dependencies": {
     "@useoptic/express-middleware": "^0.0.5",
     "agenda": "^3.1.0",
