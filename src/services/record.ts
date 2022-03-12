@@ -2,7 +2,7 @@ import { Inject, Service } from 'typedi';
 import { IRecord, IRecordFilter } from '@/interfaces/IRecord';
 
 @Service()
-export default class AuthService {
+export default class RecordService {
   constructor(@Inject('recordModel') private recordModel: Models.RecordModel, @Inject('logger') private logger) {}
 
   public async GetRecords(recordFilter: IRecordFilter): Promise<IRecord[]> {
