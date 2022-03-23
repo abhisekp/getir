@@ -1,5 +1,5 @@
 import { Model } from 'mongoose';
-import { IRecordSchema } from '@/models/records';
+import { IRecordSchema } from '../../models/records';
 
 declare global {
   namespace Express {

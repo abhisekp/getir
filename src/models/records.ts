@@ -1,4 +1,4 @@
-import { IRecord } from '@/interfaces/IRecord';
+import { IRecord } from '../interfaces/IRecord';
 import mongoose from 'mongoose';
 
 export interface IRecordSchema extends Omit<IRecord, '_id'>, mongoose.Document {}

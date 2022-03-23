@@ -1,9 +1,9 @@
 import { Request, Response, Router } from 'express';
 import { celebrate, Joi } from 'celebrate';
-import RecordService from '@/services/record';
+import RecordService from '../../services/record';
 import { Container } from 'typedi';
 import { Logger } from 'winston';
-import { IRecord, IRecordFilter } from '@/interfaces/IRecord';
+import { IRecord, IRecordFilter } from '../../interfaces/IRecord';
 import isValid from 'date-fns/isValid';
 
 const route = Router();

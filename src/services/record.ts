@@ -1,5 +1,5 @@
 import { Inject, Service } from 'typedi';
-import { IRecord, IRecordFilter } from '@/interfaces/IRecord';
+import { IRecord, IRecordFilter } from '../interfaces/IRecord';
 import addDays from 'date-fns/addDays';
 
 @Service()
