@@ -1,1 +1,1 @@
-web: node -r tsconfig-paths/register build/app.js
+web: node build/app.js
