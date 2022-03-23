@@ -39,7 +39,7 @@ export default (app: Router) => {
     }),
     async (req: Request, res: Response, next) => {
       const logger: Logger = Container.get('logger');
-      logger.debug('Calling Sign-Up endpoint with body: %o', req.body);
+      logger.debug('Calling records/ endpoint with body: %o', req.body);
       try {
         const recordServiceInstance = Container.get(RecordService);
         const records = await recordServiceInstance.GetRecords(req.body as IRecordFilter);
