@@ -16,7 +16,7 @@
 ### Status
 
 ```http request
-GET localhost:3000/status
+GET https://getir-abhisekp.herokuapp.com/status
 ```
 
 ```http response
@@ -28,7 +28,7 @@ GET localhost:3000/status
 ### Route Health
 
 ```http request
-GET localhost:3000/health
+GET https://getir-abhisekp.herokuapp.com/health
 ```
 
 ```http response
@@ -40,7 +40,7 @@ GET localhost:3000/health
 ### Fetch Records
 
 ```http request
-POST localhost:3000/records
+POST https://getir-abhisekp.herokuapp.com/records
 
 {
   "startDate": "2020-01-01",
